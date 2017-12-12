@@ -18,3 +18,11 @@
 ###> symfony/webpack-encore-pack ###
 /node_modules/
 ###< symfony/webpack-encore-pack ###
+/.idea
+/.idea/deployment.xml
+/.idea/modules.xml
+/.idea/php.xml
+/.idea/symfony2.xml
+/.idea/test_symfony.iml
+/.idea/vcs.xml
+/.idea/workspace.xml
