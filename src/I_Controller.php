@@ -9,6 +9,8 @@
 namespace App;
 
 
+use Symfony\Component\Routing\Annotation\Route;
+
 interface I_Controller
 {
     /**
@@ -17,13 +19,17 @@ interface I_Controller
     public function index();
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/module/controller/index/{id}", name="module_controller_action")
+     * @param int $id
+     * @return
      */
-    public function update();
+    public function update(int $id);
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/module/controller/index/{id}", name="module_controller_action")
+     * @param int $id
+     * @return
      */
-    public function delete();
+    public function delete(int $id);
 
 }

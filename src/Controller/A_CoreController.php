@@ -14,12 +14,16 @@ abstract class A_CoreController extends Controller implements I_Controller
     abstract public function index();
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/module/controller/index/{id}", name="module_controller_action")
+     * @param int $id
+     * @return
      */
-    abstract public function update();
+    abstract function update(int $id);
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/module/controller/index/{id}", name="module_controller_action")
+     * @param int $id
+     * @return
      */
-    abstract public function delete();
+    abstract function delete(int $id);
 }

@@ -20,18 +20,22 @@ class A_PagesController extends A_CoreController implements I_Controller
     }
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/blog/module/update/{id}", name="blog_module_update")
+     * @param int $id
+     * @return Response
      */
-    public function update()
+    public function update(int $id)
     {
-        // TODO: Implement update() method.
+        return $this->render('', []);
     }
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/blog/module/delete/{id}", name="blog_module_delete")
+     * @param int $id
+     * @return Response
      */
-    public function delete()
+    public function delete(int $id)
     {
-        // TODO: Implement delete() method.
+        return $this->render('', []);
     }
 }

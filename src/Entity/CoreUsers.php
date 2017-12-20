@@ -38,7 +38,7 @@ class CoreUsers
     protected $email;
 
     /**
-     * @ORM\OneToMany(targetEntity="BlogAuthors", mappedBy="authors")
+     * @ORM\OneToMany(targetEntity="App\Modules\Blog\Entity\BlogAuthors", mappedBy="authors")
      */
     protected $authors;
 

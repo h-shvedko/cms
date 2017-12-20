@@ -17,18 +17,22 @@ class BlogAuthorsController extends A_BlogController
     }
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/blog/authors/update/{id}", name="blog_authors_update")
+     * @param int $id
+     * @return Response
      */
-    public function update()
+    public function update(int $id)
     {
-        // TODO: Implement update() method.
+        return $this->render('@BlogTemplates/indexUpdate.html.twig', []);
     }
 
     /**
-     * @Route("/module/controller/index", name="module_controller_action")
+     * @Route("/blog/authors/delete/{id}", name="blog_authors_delete")
+     * @param int $id
+     * @return Response
      */
-    public function delete()
+    public function delete(int $id)
     {
-        // TODO: Implement delete() method.
+        return $this->render('@BlogTemplates/indexDelete.html.twig', []);
     }
 }
