@@ -28,25 +28,25 @@ abstract class A_Entity
     protected $id;
 
     /**
-     * @ORM\Column(name="created_at", type="string", nullable=false, options={"default":"CURRENT_TIMESTAMP"})
+     * @ORM\Column(name="created_at", type="string", options={"default":"CURRENT_TIMESTAMP"})
      */
     protected $createdAt;
     /**
-     * @ORM\Column(name="created_by", type="string", nullable=false, options={"default":"0"})
+     * @ORM\Column(name="created_by", type="string", options={"default":"0"})
      */
     protected $createdBy;
 
     /**
-     * @ORM\Column(name="modified_at", type="string", nullable=false, options={"default":"CURRENT_TIMESTAMP"})
+     * @ORM\Column(name="modified_at", type="string", options={"default":"CURRENT_TIMESTAMP"})
      */
     protected $modifiedAt;
     /**
-     * @ORM\Column(name="modified_by", type="string", nullable=false, options={"default":"0"})
+     * @ORM\Column(name="modified_by", type="string", options={"default":"0"})
      */
     protected $modifiedBy;
 
     /**
-     * @ORM\Column(name="is_deleted", type="string", length=1, nullable=false, options={"default":"1"})
+     * @ORM\Column(name="is_deleted", type="string", length=1, options={"default":"1"})
      **/
     protected $isVisible;
 

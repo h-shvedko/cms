@@ -2,7 +2,6 @@
 
 namespace App\Modules\Blog\Controller;
 
-use App\Controller\A_CoreController;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -14,7 +13,7 @@ class BlogAuthorsController extends A_BlogController
      */
     public function index()
     {
-        return $this->render('../templates/blog_base.html.twig', []);
+        return $this->render('@BlogTemplates/blog_base.html.twig', []);
     }
 
     /**

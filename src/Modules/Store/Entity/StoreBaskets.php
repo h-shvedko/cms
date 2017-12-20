@@ -5,9 +5,9 @@ namespace App\Modules\Store\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * @ORM\Entity(repositoryClass="App\Repository\StoreBusketsRepository")
+ * @ORM\Entity(repositoryClass="App\Modules\Store\Repository\StoreBasketsRepository")
  */
-class StoreBuskets
+class StoreBaskets
 {
     /**
      * @ORM\Id
